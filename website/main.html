@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/keyrune.css" rel="stylesheet" type="text/css">
+    <title>MTG Card Index</title>
+</head>
+
+<body>
+    <header class="header headerContainer">
+        <div class="grid-item">
+            <input type="text" class="search-input" id="search" onkeyup="search()" placeholder="Search all cards..."
+                title="Card name">
+        </div>
+        <div class="grid-item" colspan="2">
+            <h1 id="header-name" style="text-align: center;">card name</h1>
+        </div>
+        <div class="grid-item"></div>
+    </header>
+    <main>
+        <div class="grid-item search-results-div" id="search-results">
+
+        </div>
+        <div class="grid-item card-image-div">
+            <img src="Magic_card_back.png" alt="Card image" class="cardImage" id="cardImage">
+        </div>
+        <div class="grid-item card-info">
+            <p id="card-name"><b>Name: </b></p>
+            <p id="card-manaCost"><b>Mana cost: </b></p>
+            <p id="card-type"><b>Type: </b></p>
+            <p id="card-text"><b>Text: </b></p>
+            <p id="card-flavorText"><b>Flavor text: </b></p>
+            <p id="card-artist"><b>Artist: </b></p>
+            <p><b>Purchase urls:</b></p>
+            <ul style="list-style-type: none;">
+                <li style="margin: 10px;">
+                    <a id="card-url-cardKingdom" href="">Card kingdom</a>
+                </li>
+                <li style="margin: 10px;">
+                    <a id="card-url-cardmarket" href="">Cardmarket</a>
+                </li>
+                <li style="margin: 10px;">
+                    <a id="card-url-tcgplayer" href="">Tcgplayer</a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-item decklist" id="decklist-setings-div">
+            <div class="decklist-item" style="text-align: center;">
+                <h1>Add to list</h1>
+            </div>
+            <div class="decklist-item">
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <div id="decklist-select-div">
+                        <select name="decklist" class="decklist-select" id="decklist-select">
+                            <option value="newList" style="text-shadow: 1px 0 1px black;">+ NEW LIST +</option>
+                            <option value="test">test</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="addButton" onclick="addCardToList()">Add to list</button>
+                    </div>
+                </div>
+            </div>
+            <div class="decklist-item" style="text-align: center;">
+                <h1>Search list</h1>
+            </div>
+            <div class="decklist-item">
+                <div id="listsList">
+                    <select name="decklist" class="decklist-select" id="decklist-select-list">
+                        <option disabled selected value> -- select an option -- </option>
+                    </select>
+                </div>
+            </div>
+            <div class="decklist-item decklist-search-results-div" id="search-results-list">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br>
+    </footer>
+    <script src="mainPageCode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #192734;
+    color: #F0FDFB;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(25, 39, 52, 0.98), rgba(25, 39, 52, 0.98)), url("background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.start-button {
+    text-align: center;
+}
+
+.start-button p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.start-button button {
+    padding: 20px 50px;
+    background-color: #4874C7;
+    color: white;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    animation: fly-in 2s ease-out;
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translateY(-700%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

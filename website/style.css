@@ -1,0 +1,172 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgba(25, 39, 52, 0.98), rgba(25, 39, 52, 0.98)), url("background.png");
+    background-color: #192734;
+    color: #F0FDFB;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+header {
+    background-color: #4874C7;
+    width: 100%;
+    padding-top: 1%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.headerContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.search-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    height: 40%;
+    margin: 3% auto 0;
+    display: block;
+    text-align: left;
+    text-indent: 3%;
+    outline: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 81vh;
+    width: 100%;
+}
+
+.search-results-div {
+    display: block;
+    margin-right: 10px;
+    height: 97%;
+    overflow: hidden;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.search-results-list {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 0;
+    direction: ltr;
+}
+
+.card-image-div {
+    background-color: #0f171f;
+    margin-left: 10px;
+    box-shadow: -10px 0 10px -3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.cardImage {
+    width: 95%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.card-info {
+    background-color: #0f171f;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 0 10px -3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card-info a {
+    color: #4874C7;
+}
+
+.decklist {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 6fr;
+}
+
+.decklist-select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 75%;
+    margin: 3% auto;
+    display: block;
+    text-align: left;
+    text-indent: 1.5%;
+}
+
+.addButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 75%;
+    margin: 3% auto;
+    display: block;
+    text-align: left;
+    text-indent: 1.5%;
+}
+
+.decklist-search {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 40%;
+    margin: 3% auto 0;
+    display: block;
+    text-align: left;
+    text-indent: 1.5%;
+}
+
+.decklist-search-results-div {
+    display: block;
+    margin-left: 10px;
+    height: 95%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+footer {
+    background-color: #4874C7;
+    padding-top: 4%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    box-shadow: 0px -10px 10px 0 rgba(0, 0, 0, 0.4);
+    margin-top: auto;
+    z-index: 2;
+}
+
+ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
